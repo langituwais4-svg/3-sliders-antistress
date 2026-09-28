@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Sliders</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+    }
+
+    .sliders {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      width: min(320px, 80vw);
+    }
+
+    input[type="range"] {
+      width: 100%;
+      appearance: none;
+      -webkit-appearance: none;
+      height: 4px;
+      border-radius: 999px;
+      background: #d9d9d9;
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .green {
+      background: #10b981;
+    }
+
+    .green::-webkit-slider-thumb {
+      background: #10b981;
+    }
+
+    .green::-moz-range-thumb {
+      background: #10b981;
+    }
+
+    .blue {
+      background: #3b82f6;
+    }
+
+    .blue::-webkit-slider-thumb {
+      background: #3b82f6;
+    }
+
+    .blue::-moz-range-thumb {
+      background: #3b82f6;
+    }
+
+    .red {
+      background: #ef4444;
+    }
+
+    .red::-webkit-slider-thumb {
+      background: #ef4444;
+    }
+
+    .red::-moz-range-thumb {
+      background: #ef4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="sliders">
+    <input class="green" type="range" min="0" max="100" value="50">
+    <input class="blue" type="range" min="0" max="100" value="50">
+    <input class="red" type="range" min="0" max="100" value="50">
+  </div>
+</body>
+</html>
